@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const apiPath = 'https://61ea-2001-ee0-52d7-4e00-c46f-770c-4054-fd.ngrok.io'
+const apiPath = 'http://localhost:3001'
 
 const interceptor = () => {
   const token = sessionStorage.getItem('token')
