@@ -70,68 +70,66 @@ const usersData = [{id: 0, name: 'John Doe', registered: '2018/01/01', role: 'Gu
   //     default: return 'primary'
   //   }
   // }
-   return(
-     <CCard>
-        <h4>table</h4>
-        <CDataTable
-      items={usersData}
-      fields= {['id','name', 'registered', 'role', 'status']}
-      columnFilter
-      tableFilter
-      footer
-      //itemsPerPageSelect
-      //itemsPerPage={5}
-      hover
-      sorter
-      pagination
-      // scopedSlots = {{
-      //   'status':
-      //     (item)=>(
-      //       <td>
-      //         <CBadge color={getBadge(item.status)}>
-      //           {item.status}
-      //         </CBadge>
-      //       </td>
-      //     ),
-      //   'show_details':
-      //     (item, index)=>{
-      //       return (
-      //         <td className="py-2">
-      //           <CButton
-      //             color="primary"
-      //             variant="outline"
-      //             shape="square"
-      //             size="sm"
-      //             onClick={()=>{toggleDetails(index)}}
-      //           >
-      //             {details.includes(index) ? 'Hide' : 'Show'}
-      //           </CButton>
-      //         </td>
-      //         )
-      //     },
-      //   'details':
-      //       (item, index)=>{
-      //         return (
-      //         <CCollapse show={details.includes(index)}>
-      //           <CCardBody>
-      //             <h4>
-      //               {item.username}
-      //             </h4>
-      //             <p className="text-muted">User since: {item.registered}</p>
-      //             <CButton size="sm" color="info">
-      //               User Settings
-      //             </CButton>
-      //             <CButton size="sm" color="danger" className="ml-1">
-      //               Delete
-      //             </CButton>
-      //           </CCardBody>
-      //         </CCollapse>
-      //       )
-      //     }
-      // }}
-    />
-    </CCard>
-   )
+   return <CCard>
+     <h4>table</h4>
+     <CDataTable
+       items={usersData}
+       fields= {['id','name', 'registered', 'role', 'status']}
+       columnFilter
+       tableFilter
+       footer
+       //itemsPerPageSelect
+       itemsPerPage={5}
+       hover
+       sorter
+       pagination
+       // scopedSlots = {{
+       //   'status':
+       //     (item)=>(
+       //       <td>
+       //         <CBadge color={getBadge(item.status)}>
+       //           {item.status}
+       //         </CBadge>
+       //       </td>
+       //     ),
+       //   'show_details':
+       //     (item, index)=>{
+       //       return (
+       //         <td className="py-2">
+       //           <CButton
+       //             color="primary"
+       //             variant="outline"
+       //             shape="square"
+       //             size="sm"
+       //             onClick={()=>{toggleDetails(index)}}
+       //           >
+       //             {details.includes(index) ? 'Hide' : 'Show'}
+       //           </CButton>
+       //         </td>
+       //         )
+       //     },
+       //   'details':
+       //       (item, index)=>{
+       //         return (
+       //         <CCollapse show={details.includes(index)}>
+       //           <CCardBody>
+       //             <h4>
+       //               {item.username}
+       //             </h4>
+       //             <p className="text-muted">User since: {item.registered}</p>
+       //             <CButton size="sm" color="info">
+       //               User Settings
+       //             </CButton>
+       //             <CButton size="sm" color="danger" className="ml-1">
+       //               Delete
+       //             </CButton>
+       //           </CCardBody>
+       //         </CCollapse>
+       //       )
+       //     }
+       // }}
+     />
+   </CCard>
 }
 
 export default Colors

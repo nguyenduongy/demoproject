@@ -50,6 +50,8 @@ const LoginForm = (props) => {
                       <CFormInput
                         placeholder="Username"
                         autoComplete="username"
+                        value={userName}
+                        onChange={(event) => setUserName(event.target.value)}
                         onBlur={(event) => setUserName(event.target.value)}
                       />
                     </CInputGroup>
@@ -61,6 +63,8 @@ const LoginForm = (props) => {
                         type="password"
                         placeholder="Password"
                         autoComplete="current-password"
+                        value={password}
+                        onChange={(event) => setPassword(event.target.value)}
                         onBlur={(event) => setPassword(event.target.value)}
                       />
                     </CInputGroup>
